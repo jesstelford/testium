@@ -30,6 +30,8 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ###
 
+STALE_MESSAGE = /stale element reference/
+
 {truthy, hasType} = require 'assertive'
 getElementWithoutError = require './safeElement'
 deprecate = require './deprecate'
