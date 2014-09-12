@@ -62,10 +62,10 @@ markNewPage = (options, response) ->
   newPageOptions = normalizeOptions(options)
   console.log "\n[System] Marking new page request with options: #{JSON.stringify newPageOptions}"
 
-  for request in openRequests
-    console.log '[System] Aborting request for: ' + request.path
-    request.aborted = true
-    request.abort()
+  # for request in openRequests
+  #   console.log '[System] Aborting request for: ' + request.path
+  #   request.aborted = true
+  #   request.abort()
   openRequests = []
 
   response.end()
